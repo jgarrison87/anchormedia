@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+}
+
+.anchor-key {
+  box-shadow: none;
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 45px;
+  height: 60px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.anchor-open {
+  animation: 3s anchorKey linear forwards;
+}
+
+@keyframes anchorKey {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    top: -10px;
+    left: 30px;
+    width: 45px;
+    height: 60px;
+    opacity: 1;
+  }
+}
+
+.icon {
+  margin-left: 80px;
+  font-size: 3rem;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Kaushan Script", cursive;
+  color: #001a33;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.container .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 10px 3px 20px #001a33;
+}
+
+.btn {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.img-container:hover img {
+  opacity: 0.7;
+  cursor: inherit;
+  transform: scale(0.98);
+}
+
+.img-container:hover .btn {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #fff;
+  color: #001a33;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #001a33;
+}
+
+/* footer */
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #001a33;
+  color: #fff;
+}
+
+h3 {
+  padding-left: 100px;
+}
+
+ul {
+  display: flex;
+  color: #fff;
+  list-style-type: none;
+}
+
+ul li .social {
+  color: #fff;
+  padding: 0 20px 0;
+}
+
+ul li:nth-child(3) {
+  padding-right: 100px;
+}

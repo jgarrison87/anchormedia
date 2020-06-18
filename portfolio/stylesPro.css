@@ -12,23 +12,20 @@ body {
   background-color: #fff;
 }
 
-h3 {
-  padding-left: 100px;
+.navbar {
+  display: flex;
+  align-items: center;
 }
-
 .anchor-key {
   box-shadow: none;
-  position: absolute;
-  top: -10px;
-  left: 30px;
   width: 45px;
   height: 60px;
-  z-index: 1;
+  margin: 35px 0 25px 30px;
 }
 .icon {
-  margin-left: 80px;
+  margin-left: 5px;
   font-size: 3rem;
-  margin-top: 10px;
+  font-family: "Kaushan Script", cursive;
 }
 
 .title {
@@ -43,6 +40,10 @@ h1 {
   font-size: 3rem;
   font-family: "Kaushan Script", cursive;
   color: #001a33;
+}
+
+h3 {
+  padding-left: 100px;
 }
 
 p {

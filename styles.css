@@ -144,17 +144,6 @@ body {
   color: #fff;
 }
 
-.quote {
-  position: relative;
-  font-family: "Kaushan Script", cursive;
-  margin-top: 170px;
-  color: #001a33;
-  font-weight: bold;
-  font-size: 1.5rem;
-  letter-spacing: 0.5rem;
-  opacity: 0.5;
-}
-
 @media screen and (max-width: 900px) {
   .blue-bg {
     height: 100vh;
@@ -210,10 +199,5 @@ body {
   span {
     padding-top: 45px;
     font-size: 2.5rem;
-  }
-  .quote {
-    font-size: 1rem;
-    text-align: center;
-    margin: 15%;
   }
 }

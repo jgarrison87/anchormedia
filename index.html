@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anchor Media</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="blue-bg" class="blue-bg"></div>
-    <img id="anchor-key" class="anchor-key anchor-open" src="img/anchor3.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/utilities.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav id="nav">
+    <!-- <h1 class="company">ANCHOR MEDIA</h1> -->
+    <div class="nav-items">
+      <a href="#" id="nav-portfolio" class="nav-item hover-underline">Portfolio</a>
+      <a href="#" id="nav-about" class="nav-item hover-underline">About</a>
+      <a href="./contact/contact.html" id="nav-contact" class="nav-item hover-underline">Contact</a>
+    </div>
+    <div class="anchor-logo">
+      <img src="./img/anchor.png" alt="">
+    </div>
+    <div class="burger fade-in">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  
+  <!-- showcase -->
+  <div class="showcase container">
+    <h2 id="welcome" class="fade-in">Welcome to</h2>
+    <h1 id="anchorIn" class="fade-in2">ANCHOR MEDIA</h1>
+  </div>
 
-    <nav class="navbar">
-      <div class="icon">
-        <span class="text-primary text-secondary">AM</span>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="/portfolio/projects.html">Portfolio</a></li>
-        <li><a href="/contact/form.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <section class="showcase">
-      <h1 class="showcase-welcome">
-        Welcome to<span class="text-primary text-secondary"> Anchor Media</span>
-      </h1>
-      <h3 class="showcase-text">I'm Josiah</h3>
-      <p class="showcase-text">a Web Developer and Designer</p>
-    </section>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="app.js"></script>
+</body>
 </html>

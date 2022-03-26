@@ -1,0 +1,60 @@
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+.fade-in2 {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0};
+  100% {opacity:100};
+}
+
+@keyframes fade-in2 {
+  0% {opacity:0};
+  100% {opacity:100};
+}
+
+.display-none {
+  display: none;
+}
+

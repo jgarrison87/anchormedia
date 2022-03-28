@@ -5,22 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Contact Me</title>
 </head>
 <body>
+  <img src="/contact/img/bg-contact.jpg" alt="">
+  <div class="bg-cover"></div>
 
+  <div class="back">
+    <a href="/index.html" class="back-btn">
+      <i class="fa-solid fa-angles-left fa-2x"></i>
+      <h1>Back</h1>
+    </a>
+  </div>
+  
   <!-- form -->
   <form name="contact" method="POST" data-netlify="true">
-    <div class="form-control name">
-      <label for="name">Name</label><br>
-      <input type="text" name="name" placeholder="Enter Name">
-    </div>
-    <div class="form-control email">
-      <label for="email">Email</label><br>
-      <input type="email" name="email" laceholder="Enter Email">
-    </div>
-    <textarea name="message" id="" cols="50" rows="10" class="form-control"></textarea>
-    <button type="submit" id="submit" class="btn">Send Message</button>
+         
+    <input type="text" name="name" placeholder="Enter Name" class="form-control">
+    
+    <input type="email" name="email" placeholder="Enter Email" class="form-control">
+    
+    <textarea name="message" id="" cols="50" rows="10" class="form-control" placeholder="Type message here"></textarea>
+
+    <button type="submit" id="submit" class="btn form-control">Send Message</button>
   </form>
 
 </body>

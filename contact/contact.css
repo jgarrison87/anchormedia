@@ -68,6 +68,7 @@ form {
   padding: 10px;
   background-color: (200, 200, 200);
   margin-top: 20px;
+  outline: none;
 }
 
 .btn {
@@ -82,6 +83,6 @@ form {
   cursor: pointer;
   background-color: rgba(255,230,131);
   color: #000;
-  transition: .75s;  
+  transition: .5s;  
 }
 

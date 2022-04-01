@@ -27,26 +27,6 @@ img {
   background-color: rgba(150, 150, 150, .2);
 }
 
-.back {
-  color: #fff;
-  position: absolute;
-  font-size: .75rem;
-  top: 20px;
-  left: 50px;
-}
-
-.back-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80px;
-  color: rgba(150, 150, 150);
-}
-
-.back-btn:hover {
-  color: rgba(200, 200, 200);
-  transition: .5s;
-}
 
 /* form */
 form {
@@ -60,7 +40,7 @@ form {
   flex-direction: column;
   padding: 45px 15px 0px;
   box-shadow: 0px 0px 50px 10px #000;
-  background-color: rgba(81,122,139, 0.7);
+  background-color: rgba(81,122,139, 0.8);
   border-radius: 5px;
 }
 

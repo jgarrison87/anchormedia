@@ -11,18 +11,26 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   list-style: none;
   color: var(--text-color);
 }
 
-
-body {
+.showcase {
   background: url('/img/home3.jpg');
   background-size: cover;
   color: var(--text-color);
+  height: 100vh;
   overflow-x: hidden;
+}
+
+img {
+  height: 6rem;
 }
 
 /* navbar */
@@ -36,42 +44,31 @@ nav {
 
 .nav-items {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(300, 300, 300, 0.8);
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(300, 300, 300, 0.9);
   position: absolute;
   color: var(--text-color);
   top: 0;
   left: 0;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition: transform .5s ease-in;
-  /* opacity: .9; */
 }
 
-  .nav-item {
-  font-size: 2rem;  
-  width: 60%;
-  padding: 20px 40px;
+.nav-item {
+  font-size: 1.5rem;  
+  width: 10rem;
+  text-align: center;
   z-index: 5;
-  /* border-bottom: 3px solid var(--text-color); */
   position: absolute;
-  transform: translateX(-100%);
   transition: transform .5s ease-in;
+  padding-bottom: 10px;
 }
 
-#nav-portfolio {
-  top: 100px;
-}
-
-#nav-contact {
-  bottom: 100px;
-}
-
-.nav-item a {
-  width: 500px;
+.nav-item:nth-child(4) {
+  margin-right: 200px;
 }
 
 .hover-underline {
@@ -98,26 +95,6 @@ nav {
   transform-origin: bottom left;
 }
 
-.anchor-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(300, 300, 300, 0.8);
-  position: absolute;
-  color: var(--text-color);
-  top: 0;
-  left: 0;
-  transform: translateX(200%);
-  transition: transform .5s ease-in;
-  /* opacity: .9; */
-}
-
-.anchor-logo img {
-  height: 600px;
-}
-
 .nav-active-left {
   transform: translateX(0%);
 }
@@ -129,6 +106,7 @@ nav {
 
 /* burger menu */
 .burger {
+  margin-top: 40px;
   margin-right: 100px;
   cursor: pointer;
   z-index: 5;
@@ -144,11 +122,11 @@ nav {
 
 /* showcase */
 
-.showcase {
+.showcase-title {
   margin-top: 200px;
 }
 
-.showcase h1 {
+.showcase-title h1 {
   font-size: 4rem;
   text-shadow: 10 10 50px #000;
 }

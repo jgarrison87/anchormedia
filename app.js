@@ -34,3 +34,19 @@ const navSlide = () => {
 }
 
 navSlide();
+
+// Projects section
+
+const projectImg = document.querySelector('.project-img');
+const projectLink = document.querySelector('.link');
+
+projectImg.addEventListener('mouseover', mOver, false);
+projectImg.addEventListener('mouseout', mOut, false);
+
+function mOver() {
+  projectLink.classList.add('active');
+}
+
+function mOut() {
+  projectLink.classList.remove('active');
+}

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/portfolio.css">
   <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="css/glide-core.css">
+  <link rel="stylesheet" href="css/glide-theme.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- favicon -->
@@ -17,12 +19,7 @@
   <title>Anchor Media</title>
 </head>
 <body>
-  <!-- portal home -->
-  <div class="portal" data-aos="fade-down">
-    <a href="anchor-media.com">
-      <img src="img/anchor.png" alt="">
-    </a>
-  </div>
+
 
   <div class="showcase">
     <nav id="nav">
@@ -45,6 +42,7 @@
     <div class="showcase-title container">
       <h2 id="welcome" class="fade-in">Welcome to</h2>
       <h1 id="anchorIn" class="fade-in2">ANCHOR MEDIA</h1>
+      <h2 id="devlopedBy" class="fade-in2">Developed by - Sy Garrison</h2>
     </div>
   </div>
 
@@ -58,8 +56,10 @@
         <h1>Life Elevated</h1>
       </div>
       <div class="grid-item" data-aos="fade-up">
-        <img src="./portfolio/img/lastofus.jpg" class="project-img" data-aos="fade-up">
-        <h1>Last of Us II - Demo</h1>        
+        <a href="https://jgarrison87.github.io/lastofus/">
+          <img src="./portfolio/img/lastofus.jpg" class="project-img" data-aos="fade-up">
+          <h1>Last of Us II - Demo</h1>  
+        </a>
       </div>
       <div class="grid-item" data-aos="fade-left">
         <a href="https://jgarrison87.github.io/huxley-demo/">
@@ -69,10 +69,12 @@
       </div>     
     </div>
 
-    <div class="project-container grid">
+    <!-- <div class="project-container grid">
       <div class="grid-item" data-aos="fade-right">
-        <img src="./portfolio/img/energy.jpg" class="project-img" data-aos="fade-right">
-        <h1>Life Elevated</h1>
+        <a href="https://jgarrison87.github.io/lightbox/">
+          <img src="./portfolio/img/lightbox.jpg" class="project-img" data-aos="fade-right">
+          <h1>Image Lightbox</h1>
+        </a>
       </div>
       <div class="grid-item" data-aos="fade-up">
         <img src="./portfolio/img/lastofus.jpg" class="project-img" data-aos="fade-up">
@@ -86,8 +88,10 @@
     
     <div class="project-container grid">
       <div class="grid-item" data-aos="fade-right">
-        <img src="./portfolio/img/energy.jpg" class="project-img" data-aos="fade-right">
-        <h1>Life Elevated</h1>
+        <a href="https://jgarrison87.github.io/lightbox/">
+          <img src="./portfolio/img/lightbox.jpg" class="project-img" data-aos="fade-right">
+          <h1>Image Lightbox</h1>
+        </a>
       </div>
       <div class="grid-item" data-aos="fade-up">
         <img src="./portfolio/img/lastofus.jpg" class="project-img" data-aos="fade-up">
@@ -97,10 +101,21 @@
         <img src="./portfolio/img/huxley.jpg" class="project-img" data-aos="fade-left">
         <h1>Huxley - Demo</h1>
       </div>  
-    </div>
-  
-    
+    </div> -->
   </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-copy">
+      <h1 class="footer-item">Anchor Media</h1>
+      <h3 class="footer-item">&copy; 2022 Anchor Enterprises LLC All Rights Reserved</h4>
+    </div>
+    <div class="footer-social footer-item">
+      <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href="/contact/contact.html"><i class="fa-solid fa-envelope fa-2x"></i></a>
+      <a href="/contact/contact.html"><i class="fa-brands fa-github fa-2x"></i></a>
+    </div>
+  </footer>
 
 
 
@@ -114,7 +129,21 @@
     duration: 800,
   });
 </script>
+<!-- glide -->
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+  const config = {
+    type: 'carousel',
+    perView: 3,
+    breakpoints: {
+      800: {
+        perView: 2
+      }
+    }
+  };
+  new Glide('.glide').mount()
+</script>
 <!-- app.js -->
-  <script src="app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  background: linear-gradient(165deg, #073245, #4886af 50%, #83c1e8);
+  background: linear-gradient(165deg, #64c5a5 0%, #90f0dc 20%, #c7fdf7 40%, #8ffffd 60%, #6dd8db 80%);
 }
 
 /* projects */
@@ -29,6 +29,8 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 0px;
+  height: 100vh;
 }
 
 .project-img {
@@ -55,10 +57,15 @@ body {
   align-items: center;
 }
 
+.grid:last-child {
+  margin-bottom: 0px;
+  padding: 75px;
+}
+
 .grid-item {
   padding: 10px;
   position: relative;
-  background-color: var(--background);
+  background-color: rgba(65,	129,	131, .8);
   border-radius: 5px;
   text-align: center;
   box-shadow: 0px 0px 20px #000;

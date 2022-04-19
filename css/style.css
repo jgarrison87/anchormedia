@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Chivo:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --text-color: #154815;
+  --text-color: rgb(0, 26, 51);
+  --secondary-color: rgba(0, 86, 169);
+  --background: rgba(7, 50, 69);
+  --container: rgba(131, 193, 232);
 }
 
 * {
@@ -15,25 +18,30 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  list-style: none;
-  color: var(--text-color);
-}
-
-.showcase {
-  background: url('/img/home3.jpg');
+body {
+  background: url('/img/anchor.png');
   background-size: cover;
-  color: var(--text-color);
-  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  height: 100%;
+  background-color: #ececec;
   overflow-x: hidden;
 }
 
-img {
-  height: 6rem;
+a {
+  text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+
 /* navbar */
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -44,17 +52,22 @@ nav {
 
 .nav-items {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 8rem;
-  background-color: rgba(300, 300, 300, 0.9);
+  width: 40%;
+  height: 100%;
+  background-color: rgba(200, 200, 200);
   position: absolute;
   color: var(--text-color);
   top: 0;
-  left: 0;
-  transform: translateY(-100%);
+  right: 0;
+  transform: translateX(100%);
   transition: transform .5s ease-in;
+}
+
+.nav-items img {
+  height: 150px;
 }
 
 .nav-item {
@@ -65,10 +78,6 @@ nav {
   position: absolute;
   transition: transform .5s ease-in;
   padding-bottom: 10px;
-}
-
-.nav-item:nth-child(4) {
-  margin-right: 200px;
 }
 
 .hover-underline {
@@ -85,7 +94,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--text-color);
+  background-color: #fff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -105,6 +114,7 @@ nav {
 
 
 /* burger menu */
+
 .burger {
   margin-top: 40px;
   margin-right: 100px;
@@ -112,33 +122,119 @@ nav {
   z-index: 5;
 }
 
-.burger div {
+.burger-div {
   height: 4px;
   width: 50px;
-  background-color: var(--text-color);
+  background-color: #fff;
   border-radius: 2px;
   margin: 5px;
 }
 
+
 /* showcase */
 
-.showcase-title {
-  margin-top: 100px;
+
+.showcase {
+  /* background: url('/img/home.jpg'); */
+  /* background-size: cover; */
+  background: linear-gradient(160deg, rgba(0, 26, 51, .9), rgba(0,0,0, .9), rgba(0, 26, 51, .9));
+  color: #fff;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.showcase .showcase-title {
+  margin: 50px auto;
+  height: 500px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+
+.showcase-title h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
 }
 
 .showcase-title h1 {
   font-size: 5rem;
+  /* text-shadow: 0px 20px 50px lightgray; */
 }
 
+/* swiper */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px #000;
+}
+
+
+/* bio */
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(300, 300, 300, .85);
+  padding: 50px 100px;
+  margin: 50px 100px;
+}
+
+.bio img {
+  width: 350px;
+  height: 450px;
+}
+
+.bio-text {
+  width: 500px;
+}
+
+.toolbox ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.toolbox ul li {
+  color: var(--text-color);
+  padding: 5px;
+}
+
+
 /* footer */
+
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(7, 50, 69);
+  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
   color: #fff;
   padding: 20px 75px;
   text-align: center;
 }
+
+footer h1 {
+  font-size: 3rem;
+}
+
 
 .footer-social a {
   color: #fff;
@@ -156,3 +252,37 @@ footer {
 }
 
 
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-items {
+    width: 100%;
+  }
+
+  .burger {
+    margin-top: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bio img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .bio-text p {
+    font-size: .5rem;
+  }
+  
+}

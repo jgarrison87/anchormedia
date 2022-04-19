@@ -1,5 +1,6 @@
 const navSlide = () => {
   const burger = document.querySelector('.burger');
+  const burgerDiv = document.querySelector('.burger-div')
   const navItems = document.querySelector('.nav-items');
   const anchorLogo = document.querySelector('.anchor-logo');
   const welcome = document.querySelector('#welcome');
@@ -14,6 +15,7 @@ const navSlide = () => {
     anchorLogo.classList.toggle('nav-active-right');
     welcome.classList.toggle('display-none');
     anchorIn.classList.toggle('display-none');
+    burgerDiv.classList.toggle('burger-blk');
 
     setTimeout(showNavPortfolio, 800);
     setTimeout(showNavAbout, 1000);

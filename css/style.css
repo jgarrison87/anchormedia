@@ -3,7 +3,7 @@
 :root {
   --primary-color: rgb(0, 26, 51);
   --secondary-color: rgba(0, 86, 169);
-  --background: rgba(7, 50, 69);
+  --background: rgba(231, 231, 231);
   --container: rgba(131, 193, 232);
 }
 
@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 0px;
   height: 100%;
-  background-color: #ececec;
+  background-color: var(--background);
   overflow-x: hidden;
 }
 
@@ -190,6 +190,14 @@ nav {
   box-shadow: 0 0 30px #000;
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  border: #fff solid 2px;
+  background-color: transparent;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
+}
 
 /* bio */
 

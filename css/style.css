@@ -215,10 +215,6 @@ nav {
   height: 450px;
 }
 
-.bio-text {
-  width: 500px;
-}
-
 .toolbox ul {
   display: flex;
   justify-content: space-between;
@@ -332,13 +328,13 @@ footer h1 {
 
   .bio-text p {
     font-size: 8px;
-    width: 80%;
-    margin: 0px auto;
+    /* width: 80%;
+    margin: 0px auto; */
   }
 
   .toolbox {
-    width: 80%;
-    margin: 0px auto;
+    /* width: 80%;
+    margin: 0px auto; */
   }
 
 

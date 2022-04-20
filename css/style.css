@@ -149,7 +149,7 @@ nav {
 }
 
 .showcase .showcase-title {
-  margin: 50px auto;
+  margin: 50px auto 0px;
   height: 500px;
   width: 80%;
   display: flex;
@@ -291,7 +291,7 @@ footer h1 {
   }
  
   .showcase .showcase-title {
-    margin: 30px auto;
+    margin: 30px auto 0px;
     height: 400px;
   }
   

@@ -205,6 +205,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   background-color: rgba(300, 300, 300, .85);
   padding: 50px 100px;
   margin: 50px 100px;
@@ -213,6 +214,10 @@ nav {
 .bio img {
   width: 350px;
   height: 450px;
+}
+
+.bio-text {
+  width: 600px;
 }
 
 .toolbox ul {
@@ -233,16 +238,25 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 26, 51, .9);
-  /* background-color: var(--text-color); */
   color: #fff;
   padding: 20px 75px;
   text-align: center;
+  width: 100%;
+}
+
+.footer-copy {
+  width: 80%;
+  margin: 0px auto;
 }
 
 footer h1 {
   font-size: 3rem;
 }
 
+.footer-social {
+  width: 80%;
+  margin: 0px auto;
+}
 
 .footer-social a {
   color: #fff;
@@ -271,7 +285,7 @@ footer h1 {
 
   .burger {
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 30px;
     cursor: pointer;
     z-index: 5;
   }
@@ -282,12 +296,12 @@ footer h1 {
   }
   
   .showcase-title h2 {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     font-size: 24px;
   }
   
   .showcase-title h1 {
-    font-size: 64px;
+    font-size: 60px;
   }
 
   .swiper {
@@ -326,17 +340,18 @@ footer h1 {
     height: 300px;
   }
 
+  .bio-text {
+    width: 250px;
+  }
+
+  .bio-text h1 {
+    padding: 5px;
+  }
+
   .bio-text p {
     font-size: 8px;
-    /* width: 80%;
-    margin: 0px auto; */
+    padding: 5px;
   }
-
-  .toolbox {
-    /* width: 80%;
-    margin: 0px auto; */
-  }
-
 
   footer {
     padding: 10px;
@@ -345,4 +360,8 @@ footer h1 {
   footer h1 {
     font-size: 32px;
   }  
+
+  footer h3 {
+    font-size: 16px;
+  }
 }

@@ -286,11 +286,11 @@ footer h1 {
   
   .showcase-title h2 {
     margin-bottom: 40px;
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   
   .showcase-title h1 {
-    font-size: 4rem;
+    font-size: 64px;
   }
 
   .bio {
@@ -310,7 +310,7 @@ footer h1 {
   }
 
   .bio-text p {
-    font-size: .5rem;
+    font-size: 8px;
     width: 80%;
     margin: 0px auto;
   }
@@ -326,6 +326,6 @@ footer h1 {
   }
   
   footer h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }  
 }

@@ -220,6 +220,10 @@ nav {
   width: 600px;
 }
 
+.bio-text p {
+  font-size: 20px;
+}
+
 .toolbox ul {
   display: flex;
   justify-content: space-between;
@@ -289,7 +293,8 @@ footer h1 {
     cursor: pointer;
     z-index: 5;
   }
- 
+
+
   .showcase .showcase-title {
     margin: 60px auto 0px;
     height: 400px;

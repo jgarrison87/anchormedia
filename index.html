@@ -4,94 +4,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico" />
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>SpaceX-Demo</title>
+  <title>Anchor Enterprises</title>
 </head>
 <body>
 
-<div class="section1 section">
-  <nav class="nav">
-    <div class="navbar">
-      <img src="img/logo.png" class="logo">
-      <ul>
-        <li><a href=""></a>Falcon</li>
-        <li><a href=""></a>Falcon Heavy</li>
-        <li><a href=""></a>Dragon</li>
-        <li><a href=""></a>Starship</li>
-        <li><a href=""></a>Human Spaceflight</li>
-        <li><a href=""></a>Rideshare</li>
-      </ul>
-      <div class="menu">
-        <a href="" class="shop">Shop</a>
-        <i class="fa fa-bars menuBtn" aria-hidden="true"></i>
-      </div>
+<div class="page">
+
+  
+  <div class="showcase">
+  <nav id="nav">
+    <!-- <h1 class="company">ANCHOR MEDIA</h1> -->
+    <div class="nav-items">
+      <img src="./img/anchor.png" alt="">      
+      <a href="#portfolio" id="nav-portfolio" class="nav-item hover-underline">Portfolio</a>
+      <a href="#bio" id="nav-about" class="nav-item hover-underline">About</a>
+      <a href="./contact/contact.html" id="nav-contact" class="nav-item hover-underline">Contact</a>
+    </div>
+    
+    <div class="burger fade-in">
+      <div class="line1 burger-div"></div>
+      <div class="line2 burger-div"></div>
+      <div class="line3 burger-div"></div>
     </div>
   </nav>
-
-  <!-- text section -->
-  <div class="bg-text">
-    <h3>UPCOMING RETURN</h3>
-    <h1>AX-1 TO DEPART FROM THE INTERNATIONAL SPACE STATION</h1>
-    <h1 class="h1-mobile">Ax-1 to return to earth</h1>
-    <button class="btn btn-outline btn-sweep-up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">WATCH</button>
+  
+  <!-- showcase -->
+  <div class="showcase-title container">
+    <h2 id="welcome" class="fade-in">Welcome to</h2>
+    <h1 id="anchorIn" class="fade-in2">ANCHOR MEDIA</h1>
+    <!-- <h2 id="devlopedBy" class="fade-in2">Developed by - Sy Garrison</h2> -->
   </div>
 </div>
 
-<div class="section section2">
-  <div class="bg-text">
-    <h3>Upcoming Launch</h3>
-    <h1>Crew-4 Mission</h1>
-    <button class="btn btn-outline btn-sweep-up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">WATCH</button>
-  </div>
-</div>
-
-<div class="section section3">
-  <div class="bg-text">
-    <h3>Recent Launch</h3>
-    <h1>StarLink Mission</h1>
-    <button class="btn btn-outline btn-sweep-up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">REWATCH</button>
-  </div>
-</div>
-
-<div class="section section4">
-  <div class="bg-text">
-    <!-- <h3>Recent Launch</h3> -->
-    <h1>Starship Update</h1>
-    <button class="btn btn-outline btn-sweep-up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">LEARN MORE</button>
-  </div>
-</div>
-
-<div class="section section5">
-  <div class="bg-text">
-    <!-- <h3>Recent Launch</h3> -->
-    <h1>Starship to land NASA Astronauts on the moon</h1>
-    <button class="btn btn-outline btn-sweep-up" data-aos="fade-up" data-aos-anchor-placement="top-bottom">LEARN MORE</button>
-  </div>
-</div>
-
-
-<!-- footer -->
-<footer>
-  <div class="container">
-    <h3>SpaceX &copy; 2022</h3>
-    <div class="footer-links">
-      <a href="#" class="footer-link">Twitter</a>
-      <a href="#" class="footer-link">Youtube</a>
-      <a href="#" class="footer-link">Instagram</a>
-      <a href="#" class="footer-link">Flickr</a>
-      <a href="#" class="footer-link">Linkedin</a>
-      <a href="#" class="footer-link">Privacy Policy</a>
+<!-- Slider main container -->
+<div id="portfolio" class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="https://liveyourlifeelevated.com/"><img src="/img/projects/energy.jpg" class="project-img"/></a>
     </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/huxley-demo/"><img src="/img/projects/huxley.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/lastofus/"><img src="/img/projects/lastofus.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/lightbox/"><img src="/img/projects/lightbox.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/spacex-demo/"><img src="/img/projects/spacex.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/huxley-demo/"><img src="/img/projects/huxley.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/lastofus/"><img src="/img/projects/lastofus.jpg" class="project-img"/></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://jgarrison87.github.io/lightbox/"><img src="/img/projects/lightbox.jpg" class="project-img"/></a>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- bio -->
+<div id="bio" class="bio">
+  <img src="img/bio.jpg" alt="">
+  <div class="bio-text p-3">
+    <h1 class="p-2">Sy Garrison</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ad beatae molestiae. Dolor, cumque harum numquam voluptates quos, dolorem fuga nesciunt cum, inventore natus veniam perspiciatis? Ipsa vel praesentium illo!</p>
+    <div class="toolbox">
+      <ul>
+          <li><i class="fa-brands fa-html5 fa-2x"></i></li>
+          <li><i class="fa-brands fa-js fa-2x"></i></li>
+          <li><i class="fa-brands fa-react fa-2x"></i></li>
+          <li><i class="fa-brands fa-github fa-2x"></i></li>
+          <li><i class="fab fa-css3 fa-2x"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- footer -->
+<footer>
+  <div class="footer-copy">
+    <h1 class="footer-item p-2">Anchor Media</h1>
+    <h3 class="footer-item">&copy; 2022 Anchor Enterprises LLC All Rights Reserved</h4>
+  </div>
+  <div class="footer-social footer-item">
+    <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    <a href="/contact/contact.html"><i class="fa-solid fa-envelope fa-2x"></i></a>
+    <a href="/contact/contact.html"><i class="fa-brands fa-github fa-2x"></i></a>
   </div>
 </footer>
 
+</div>
 
 <!-- aos -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -101,7 +120,43 @@
     duration: 800,
   });
 </script>
-<!-- scripts -->
+<!-- swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: '2',        
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
+<!-- js -->
 <script src="app.js"></script>
+
 </body>
 </html>

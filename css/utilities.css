@@ -88,3 +88,9 @@
   color: rgba(200, 200, 200);
   transition: .5s;
 }
+
+@media screen and (max-width: 450px) {
+  .back {
+    left: 25px;
+  }
+}

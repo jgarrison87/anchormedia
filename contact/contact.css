@@ -66,3 +66,11 @@ form {
   transition: .5s;  
 }
 
+@media screen and (max-width: 450px) {
+  form {
+    width: 400px;
+    padding: 5px;
+    margin: 0px;
+  }
+
+}

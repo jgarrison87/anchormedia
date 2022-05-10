@@ -137,6 +137,9 @@ nav {
   margin-top: 5px;
 }
 
+.burger-blk {
+  background-color: #000;
+}
 
 /* showcase */
 
@@ -170,17 +173,20 @@ nav {
 
 /* swiper */
 
+.portfolio {
+  height: 100vh;
+}
+
 .swiper {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 600px;
 }
 
 .swiper-slide img {
@@ -213,8 +219,8 @@ nav {
   text-align: center;
   background-color: var(--container);
   padding: 50px 100px;
-  margin: 50px 50px;
-  box-shadow: 0 30px 30px rgba(150, 150, 150);
+  margin: 50px 0px;
+  /* box-shadow: 0 30px 30px rgba(150, 150, 150); */
   color: #fff;
 }
 
@@ -255,13 +261,16 @@ footer {
   width: 100%;
 }
 
+footer h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .footer-copy {
   width: 80%;
   margin: 0px auto;
-}
-
-footer h1 {
-  font-size: 3rem;
+  color: var(--container)
 }
 
 .footer-social {
@@ -270,14 +279,16 @@ footer h1 {
 }
 
 .footer-social a {
-  color: #fff;
+  color: var(--container);
   padding: 10px 10px;
   position: relative;
   transition: top ease-in-out .7s;
+  transition: all .3s ease-in-out;
 }
 
 .footer-social a:hover {
   top: -5px;
+  color: #fff;
 }
 
 .footer-item {

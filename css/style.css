@@ -4,7 +4,7 @@
   --primary-color: rgb(0, 26, 51);
   --secondary-color: rgba(0, 86, 169);
   --background: rgba(231, 231, 231);
-  --container: rgba(131, 193, 232);
+  --container: rgba(133, 133, 133, .95);
 }
 
 * {
@@ -142,7 +142,7 @@ nav {
 
 
 .showcase {
-  background: linear-gradient(135deg, rgba(0, 26, 51, .9), rgba(0,0,0, .9), rgba(0, 26, 51, .9));
+  background: linear-gradient(135deg, rgba(0, 26, 51, .85), rgba(0,0,0, .85), rgba(0, 26, 51, .85));
   color: #fff;
   height: 100vh;
   overflow-x: hidden;
@@ -199,6 +199,11 @@ nav {
   background-color: white;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+}
+
 /* bio */
 
 .bio {
@@ -206,9 +211,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgba(300, 300, 300, .85);
+  background-color: var(--container);
   padding: 50px 100px;
-  margin: 50px 100px;
+  margin: 50px 50px;
+  box-shadow: 0 30px 30px rgba(150, 150, 150);
+  color: #fff;
 }
 
 .bio img {
@@ -231,7 +238,7 @@ nav {
 }
 
 .toolbox ul li {
-  color: var(--primary-color);
+  color: #fff;
   padding: 5px;
 }
 
@@ -241,7 +248,7 @@ nav {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 26, 51, .9);
+  background-color: rgba(0, 26, 51, .95);
   color: #fff;
   padding: 20px 75px;
   text-align: center;
@@ -336,8 +343,8 @@ footer h1 {
     justify-items: center;
     align-items: center;
     text-align: center;
-    width: 90%;
-    margin: 15px auto;
+    width: 100%;
+    margin: 15px 0px;
   }
   
   .bio img {

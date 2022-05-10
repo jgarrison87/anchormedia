@@ -347,8 +347,8 @@ footer h1 {
   }
 
   .portfolio {
-    height: 50vh;
-    margin: 100px auto;
+    height: 60vh;
+    /* padding: 100px; */
   }
 
   .swiper {

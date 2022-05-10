@@ -379,16 +379,17 @@ footer h1 {
     align-items: center;
     text-align: center;
     width: 100%;
+    /* padding: 0px; */
     margin: 15px 0px;
   }
   
   .bio img {
-    width: 275px;
-    height: 325px;
+    width: 200px;
+    height: 275px;
   }
 
   .bio-text {
-    width: 275px;
+    width: 350px;
   }
   
   .bio-text h1 {

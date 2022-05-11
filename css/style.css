@@ -256,6 +256,19 @@ nav {
   font-size: 20px;
 }
 
+.chat-btn {
+  margin: 10px 0px;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+
+  
+}
+
+
+
 .toolbox ul {
   display: flex;
   justify-content: space-between;
@@ -271,47 +284,66 @@ nav {
 /* footer */
 
 footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 26, 51, .95);
-  color: #fff;
-  padding: 20px 75px;
-  text-align: center;
-  width: 100%;
+  justify-content: flex-start;
+  padding: 10px 0px 20px;
 }
 
-footer h1 {
-  font-size: 3rem;
+.footer-left h1 {
+  color: #fff;
   text-transform: uppercase;
-  color: #fff;
+  font-size: 3rem;
 }
 
-.footer-copy {
-  width: 80%;
-  margin: 0px auto;
+.footer-left h3 {
   color: var(--container)
 }
 
-.footer-social {
-  width: 80%;
-  margin: 0px auto;
+.footer-right {
+ width: 250px;
+ display: flex;
+ flex-direction: column;
 }
 
-.footer-social a {
+.footer-right .footer-social,
+.footer-right .footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.footer-right .footer-social a {
   color: var(--container);
-  padding: 10px 10px;
-  position: relative;
-  transition: top ease-in-out .7s;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.footer-social a:hover {
-  top: -5px;
-  color: #fff;
+.footer-right .footer-links a {
+  color: var(--container);
+  padding: 10px;
+  border-right: 2px solid var(--container);
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.footer-right .footer-links a:first-child {
+  border-left: 2px solid var(--container);
 }
 
 .footer-item {
   padding: 10px;
+} 
+
+.footer-right .footer-social a:hover,
+.footer-right .footer-links a:hover {
+  color: #fff;
 }
 
 
@@ -402,14 +434,14 @@ footer h1 {
   }
 
   footer {
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  
-  footer h1 {
-    font-size: 32px;
-  }  
 
-  footer h3 {
-    font-size: 16px;
+  footer .footer-left h1 {
+    font-size: 2rem;
   }
 }

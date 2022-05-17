@@ -233,6 +233,7 @@ nav {
 
 .bio {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -244,12 +245,12 @@ nav {
 }
 
 .bio img {
-  width: 350px;
-  height: 450px;
+  width: 275px;
+  height: 300px;
 }
 
 .bio-text {
-  width: 600px;
+  width: 700px;
 }
 
 .bio-text p {
@@ -262,9 +263,14 @@ nav {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 5px;
-  color: #fff;
+  color: #fff;  
+  transition: all .2s ease-in-out;
+}
 
-  
+.chat-btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--container);
 }
 
 

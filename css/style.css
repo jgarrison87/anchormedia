@@ -210,9 +210,21 @@ nav {
   text-align: center;
 }
 
+.swiper-slide .tech-used {
+  position: absolute;
+  color: #fff;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .swiper-slide:first-child .slider-caption {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
+}
+
+.swiper-slide:first-child .tech-used {
+  color: var(--primary-color);  
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -237,18 +249,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, rgba(0, 26, 51, .85), rgba(0,0,0, .85), rgba(0, 26, 51, .85));
+  background: rgba(0, 26, 51, .75);
   padding: 50px 100px;
   margin: 50px auto;
   /* box-shadow: 0 30px 30px rgba(150, 150, 150); */
   color: #fff;
 }
-
-/* .bio img {
-  width: 210px;
-  height: 270px;
-  
-} */
 
 .bio-text {
   width: 700px;
@@ -292,7 +298,7 @@ nav {
 /* footer */
 
 footer {
-  background-color: var(--primary-color);
+  background-color: rgba(0, 26, 51, .95);
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;

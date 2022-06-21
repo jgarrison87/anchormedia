@@ -212,6 +212,7 @@ nav {
 
 .swiper-slide .tech-used {
   position: absolute;
+  text-align: center;
   color: #fff;
   bottom: 15%;
   left: 50%;
@@ -415,6 +416,10 @@ footer {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 30px #000;
+  }
+
+  .swiper-slide .tech-used {
+    bottom: 10%;
   }
 
   .bio {
